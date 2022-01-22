@@ -1,6 +1,6 @@
 apiVersion: skaffold/v2alpha3
 kind: Config
-deploy: 
+deploy:
   kubectl:
     manifests:
       - ./infra/k8s/*
@@ -13,6 +13,6 @@ build:
       docker:
         dockerfile: Dockerfile
       sync:
-        manual: 
-          - src: 'src/**/*.ts'
+        manual:
+          - src: "src/**/*.ts"
             dest: .

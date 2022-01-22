@@ -9,7 +9,7 @@ metadata:
 spec:
   rules:
     - host: ticketing.dev
-    # - host: services.4pindia.com
+      # - host: services.4pindia.com
       http:
         paths:
           - path: /api/users/?(.*)
